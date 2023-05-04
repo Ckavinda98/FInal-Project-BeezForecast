@@ -28,6 +28,7 @@ const LoginForm = () => {
       // console.log(history);
       // Navigate.to("/admin");
       window.localStorage.setItem("user", res.data.id);
+      alert("Login Succsessfull !");
       history("/predict");
     } else {
       alert("Please check your password");

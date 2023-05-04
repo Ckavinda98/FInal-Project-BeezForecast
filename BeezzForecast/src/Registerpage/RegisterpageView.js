@@ -28,6 +28,7 @@ const RegForm = () => {
         const res = await userRegister(user);
         if (res.data) {
           window.localStorage.setItem("user", res.data.id);
+          alert("Sing Up Succsessfull !");
           navigate("/");
         }
       } else {
